@@ -12,8 +12,8 @@ export default {
 				dark: '#222',
 			},
 			fontFamily: {
-				sans: "'Open Sans', sans-serif",
-				montserrat: "'Montserrat', sans-serif",
+				'my-sans': ['OpenSans', 'sans-serif'],
+				'my-montserrat': ['Montserrat', 'montserrat'],
 			},
 			fontSize: {
 				sm: 'clamp(0.75rem, 4.2vw, 1rem)',

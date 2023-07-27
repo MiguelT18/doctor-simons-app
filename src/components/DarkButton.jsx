@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import LightRoundButton from '../assets/darkbutton/light-round-button.svg';
-import LightSwitchElements from '../assets/darkbutton/light-switch-elements.svg';
-import DarkRoundButton from '../assets/darkbutton/night-round-button.svg';
-import DarkSwitchElements from '../assets/darkbutton/night-switch-elements.svg';
+import LightRoundButton from '../../public/assets/icons/light-round-button.svg';
+import LightSwitchElements from '../../public/assets/icons/light-switch-elements.svg';
+import DarkRoundButton from '../../public/assets/icons/night-round-button.svg';
+import DarkSwitchElements from '../../public/assets/icons/night-switch-elements.svg';
 
 export function DarkButton() {
 	const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -31,17 +31,18 @@ export function DarkButton() {
 	return (
 		<div
 			onClick={handleButtonClick}
-			className='fixed w-fit bottom-0 right-0 mb-3 mr-2'>
+			className='fixed w-fit bottom-0 right-0 mb-3 mr-3 cursor-pointer'>
 			<img
 				src={roundButton}
 				alt='round button element'
-				className={`absolute -top-[8%] transition-transform duration-300 ease-in-out ${
+				className={`w-fit h-fit absolute -top-[8%] transition-transform duration-300 ease-in-out ${
 					isDarkMode ? 'transform translate-x-[115%]' : ''
 				}`}
 			/>
 			<img
 				src={switchElements}
 				alt='switch button element'
+				className='w-fit h-fit'
 			/>
 		</div>
 	);

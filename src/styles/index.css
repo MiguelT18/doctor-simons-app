@@ -2,6 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+	OPEN SANS
+*/
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../../public/fonts/Open_Sans/static/OpenSans-Bold.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: 700;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../../public/fonts/Open_Sans/static/OpenSans-SemiBold.ttf')
+		format('truetype');
+	font-weight: 600;
+	font-style: 600;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../../public/fonts/Open_Sans/static/OpenSans-Regular.ttf')
+		format('truetype');
+	font-weight: 400;
+	font-style: 400;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../../public/fonts/Open_Sans/static/OpenSans-Light.ttf')
+		format('truetype');
+	font-weight: 300;
+	font-style: 300;
+}
+
+/* 
+	MONTSERRAT
+*/
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../public/fonts/Montserrat/static/Montserrat-Bold.ttf')
+		format('truetype');
+	font-weight: 700;
+	font-style: 700;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../public/fonts/Montserrat/static/Montserrat-Medium.ttf')
+		format('truetype');
+	font-weight: 500;
+	font-style: 500;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -62,7 +117,7 @@ h4,
 h5,
 h6 {
 	overflow-wrap: break-word;
-	hyphens: auto;
+	/* hyphens: auto; */
 }
 
 /*
