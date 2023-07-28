@@ -31,7 +31,7 @@ export function DarkButton() {
 	return (
 		<div
 			onClick={handleButtonClick}
-			className='fixed w-fit bottom-0 right-0 mb-3 mr-3 cursor-pointer'>
+			className='fixed w-fit bottom-0 right-0 mb-3 mr-3 cursor-pointer z-50'>
 			<img
 				src={roundButton}
 				alt='round button element'

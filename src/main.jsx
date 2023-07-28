@@ -9,29 +9,30 @@ import {
 import ErrorPage from './routes/404.jsx';
 import App from './routes/App.jsx';
 import './styles/index.css';
+// Routes:
+import { ConsultaOnline } from './routes/ConsultaOnline.jsx';
+import { Newsletter } from './routes/Newsletter.jsx';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route
-			path='/'
-			element={<App />}>
+		<>
 			<Route
-				path='/about'
-				element={<h1>About Page</h1>}
+				path='/'
+				element={<App />}
 			/>
 			<Route
-				path='/contact'
-				element={<h1>Contact Page</h1>}
+				path='/consulta_online/*'
+				element={<ConsultaOnline />}
 			/>
 			<Route
-				path='/about/nested'
-				element={<h1>Nested Route</h1>}
+				path='/newsletter'
+				element={<Newsletter />}
 			/>
 			<Route
 				path='*'
 				element={<ErrorPage />}
 			/>
-		</Route>
+		</>
 	)
 );
 
