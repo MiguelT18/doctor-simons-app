@@ -47,11 +47,12 @@ export default {
 			}),
 			animation: {
 				float: 'float 2s ease-in-out infinite',
+				pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 			},
 			keyframes: {
 				float: {
 					'0%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-5px)' },
+					'50%': { transform: 'translateY(-10px)' },
 					'100%': { transform: 'translateY(0px)' },
 				},
 			},

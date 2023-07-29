@@ -12,7 +12,8 @@ import './styles/index.css';
 
 //? Route Elements:
 //* Consulta en Línea
-import { ConsultaOnline } from './routes/ConsultaOnline/ConsultaOnline.jsx';
+import { LandingPage } from './routes/ConsultaOnline/LandingPage.jsx';
+import { ConsultaOnline } from './components/ConsultaOnline/Considerations/ConsultaOnline.jsx';
 import { Paso1 } from './routes/ConsultaOnline/form/Paso1.jsx';
 
 //* Newsletter
@@ -27,10 +28,14 @@ const router = createBrowserRouter(
 			/>
 			<Route
 				path='/consulta_online/*'
+				element={<LandingPage />}
+			/>
+			<Route
+				path='/consulta_online/consideraciones/*'
 				element={<ConsultaOnline />}
 			/>
 			<Route
-				path='/consulta_online/formulario/paso1'
+				path='/consideraciones/formulario/paso1'
 				element={<Paso1 />}
 			/>
 			<Route

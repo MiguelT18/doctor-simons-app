@@ -10,7 +10,11 @@ export function Paso1() {
 				sequi beatae eum alias nihil vel, soluta ducimus magni velit. In
 				dolore quidem aspernatur?
 			</p>
-			<PrevNavButton prev='/consulta_online' />
+			<input
+				type='text'
+				placeholder='datos del paciente'
+			/>
+			<PrevNavButton prev='/consulta_online/consideraciones' />
 		</div>
 	);
 }

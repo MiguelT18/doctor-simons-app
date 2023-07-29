@@ -7,7 +7,7 @@ export function PrevNavButton({ prev }) {
 	return (
 		<Link
 			to={prev}
-			className='right-5 top-5 fixed z-40'>
+			className='right-0 top-0 m-4 fixed z-40'>
 			<FontAwesomeIcon
 				className='w-10 h-full text-main-red fa-bounce fa-beat-fade'
 				style={{ '--fa-animation-duration': '3s' }}
