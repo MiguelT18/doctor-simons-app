@@ -1,6 +1,6 @@
-import HeaderImage from '../../../public/images-processed/home-header-picture.webp';
-import DoctorName from '../../../public/assets/images/doctor-name.png';
-import Elipse from '../../../public/assets/icons/elipse.svg';
+import HeaderImage from '/src/assets/images/home-header-picture.webp';
+import DoctorName from '/src/assets/images/doctor-name.png';
+import Elipse from '/src/assets/icons/elipse.svg';
 
 export function Header() {
 	return (
@@ -24,7 +24,7 @@ export function Header() {
 					className='w-header-drname h-full'
 				/>
 			</div>
-			<span className='block relative h-[2px] w-[80%] max-w-[390px] mx-auto my-4 bg-white after:block after:w-[7px] after:h-[7px] after:bg-white after:rotate-45 after:absolute after:-top-[3px] before:block before:w-[7px] before:h-[7px] before:bg-white before:rotate-45 before:absolute before:-top-[3px] before:right-0'></span>
+			<span className='block relative h-[2px] w-[80%] max-w-[390px] mx-auto my-5 bg-white after:block after:w-[7px] after:h-[7px] after:bg-white after:rotate-45 after:absolute after:-top-[3px] before:block before:w-[7px] before:h-[7px] before:bg-white before:rotate-45 before:absolute before:-top-[3px] before:right-0'></span>
 			<p className='text-white font-my-sans max-w-[770px] mx-auto text-sm text-center pb-4 px-2'>
 				¡Hola! Soy el Dr. Cristian Simons, especialista en rinoplastía
 				ultrasónica y rinología. Mi misión es ayudarte a tener la nariz

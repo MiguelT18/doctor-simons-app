@@ -9,8 +9,13 @@ import {
 import ErrorPage from './routes/404.jsx';
 import App from './routes/App.jsx';
 import './styles/index.css';
-// Routes:
-import { ConsultaOnline } from './routes/ConsultaOnline.jsx';
+
+//? Route Elements:
+//* Consulta en Línea
+import { ConsultaOnline } from './routes/ConsultaOnline/ConsultaOnline.jsx';
+import { Paso1 } from './routes/ConsultaOnline/form/Paso1.jsx';
+
+//* Newsletter
 import { Newsletter } from './routes/Newsletter.jsx';
 
 const router = createBrowserRouter(
@@ -23,6 +28,10 @@ const router = createBrowserRouter(
 			<Route
 				path='/consulta_online/*'
 				element={<ConsultaOnline />}
+			/>
+			<Route
+				path='/consulta_online/formulario/paso1'
+				element={<Paso1 />}
 			/>
 			<Route
 				path='/newsletter'

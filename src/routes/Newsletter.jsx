@@ -1,3 +1,13 @@
+import { PrevNavButton } from '../components/PrevNavButton';
+import { DarkButton } from '../components/DarkButton';
+import { Footer } from '../components/Footer';
+
 export function Newsletter() {
-	return <h1>Hello World, this is my newsletter!</h1>;
+	return (
+		<>
+			<Footer />
+			<DarkButton />
+			<PrevNavButton />
+		</>
+	);
 }

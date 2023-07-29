@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 //* Directorio de las imágenes originales
-const inputDir = path.join(__dirname, './public/assets/images/');
+const inputDir = path.join(__dirname, './src/assets/images/');
 
 //* Directorio donde se guardarán las imágenes procesadas
 const outputDir = path.join(__dirname, './public/images-processed/');
@@ -31,7 +31,6 @@ fs.readdir(inputDir, (err, files) => {
 
 		// Cambia el tamaño de la imagen y la convierte a WebP
 		sharp(inputPath)
-			.resize(200)
 			.toFormat('webp')
 			.toFile(outputPath)
 			.then(() => console.log('Imagen procesada: ', outputPath))

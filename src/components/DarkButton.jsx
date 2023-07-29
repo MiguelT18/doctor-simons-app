@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
-import LightRoundButton from '../../public/assets/icons/light-round-button.svg';
-import LightSwitchElements from '../../public/assets/icons/light-switch-elements.svg';
-import DarkRoundButton from '../../public/assets/icons/night-round-button.svg';
-import DarkSwitchElements from '../../public/assets/icons/night-switch-elements.svg';
+import LightRoundButton from '/src/assets/icons/light-round-button.svg';
+import LightSwitchElements from '/src/assets/icons/light-switch-elements.svg';
+import DarkRoundButton from '/src/assets/icons/night-round-button.svg';
+import DarkSwitchElements from '/src/assets/icons/night-switch-elements.svg';
 
 export function DarkButton() {
 	const [isDarkMode, setIsDarkMode] = useState(() => {
 		const savedTheme = localStorage.getItem('isDarkMode');
 		return savedTheme === 'true' ? true : false;
 	});
+
+	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
 		if (isDarkMode) {
@@ -23,6 +25,23 @@ export function DarkButton() {
 		setIsDarkMode(!isDarkMode);
 	};
 
+	const handleScroll = () => {
+		const position = window.scrollY;
+		const specificPosition = 100;
+		if (position > specificPosition) {
+			setIsScrolled(true);
+		} else {
+			setIsScrolled(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	const roundButton = isDarkMode ? DarkRoundButton : LightRoundButton;
 	const switchElements = isDarkMode
 		? DarkSwitchElements
@@ -31,12 +50,16 @@ export function DarkButton() {
 	return (
 		<div
 			onClick={handleButtonClick}
-			className='fixed w-fit bottom-0 right-0 mb-3 mr-3 cursor-pointer z-50'>
+			className={`fixed ${
+				isScrolled ? 'top-0' : 'bottom-0'
+			} left-0 m-3 cursor-pointer z-50`}>
 			<img
 				src={roundButton}
 				alt='round button element'
-				className={`w-fit h-fit absolute -top-[8%] transition-transform duration-300 ease-in-out ${
-					isDarkMode ? 'transform translate-x-[115%]' : ''
+				className={`w-fit h-fit absolute -top-0.5 transition-transform duration-300 ease-in-out ${
+					isDarkMode
+						? 'transform translate-x-[105%] -top-[5.5px]'
+						: ''
 				}`}
 			/>
 			<img

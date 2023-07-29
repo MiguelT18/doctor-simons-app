@@ -45,6 +45,16 @@ export default {
 				'hero-desk-pattern':
 					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./assets/images/consulta-en-linea/desktop-background.webp")',
 			}),
+			animation: {
+				float: 'float 2s ease-in-out infinite',
+			},
+			keyframes: {
+				float: {
+					'0%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-5px)' },
+					'100%': { transform: 'translateY(0px)' },
+				},
+			},
 		},
 	},
 	plugins: [],
