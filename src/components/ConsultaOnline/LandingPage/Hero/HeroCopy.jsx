@@ -16,7 +16,7 @@ export function HeroCopy() {
 			<div
 				className={`${
 					rotated ? 'hidden' : ''
-				} flex flex-wrap gap-3 justify-center shadow-lg shadow-black dark:shadow-black dark:shadow-2xl p-5 bg-gradient-linear-light dark:bg-gradient-linear-dark text-white h-full rounded-xl`}>
+				} flex flex-wrap gap-3 justify-center shadow-lg shadow-black dark:shadow-black dark:shadow-2xl p-5 bg-gradient-linear-newsletter text-white h-full rounded-xl`}>
 				<h1 className='max-w-[260px] text-center text-md font-my-montserrat font-bold uppercase'>
 					Durante tu consulta, tendrás la oportunidad de:
 				</h1>
@@ -29,7 +29,7 @@ export function HeroCopy() {
 			<div
 				className={`${
 					rotated ? '' : 'hidden'
-				} shadow-lg shadow-black dark:shadow-black dark:shadow-2xl p-5 bg-gradient-linear-light dark:bg-gradient-linear-dark text-white h-full rounded-xl`}>
+				} shadow-lg shadow-black dark:shadow-black dark:shadow-2xl p-5 bg-gradient-linear-newsletter text-white h-full rounded-xl`}>
 				<ul className='text-sm flex flex-col gap-5'>
 					<li>
 						✅ Conocer a nuestro equipo y recibir un servicio
