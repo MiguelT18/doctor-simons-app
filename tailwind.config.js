@@ -41,9 +41,9 @@ export default {
 				'gradient-linear-facebook':
 					'linear-gradient(to bottom, #00affe, #006bf0)',
 				'hero-mob-pattern':
-					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./assets/images/consulta-en-linea/mobile-background.webp")',
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./src/assets/images/mobile-background.webp")',
 				'hero-desk-pattern':
-					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./assets/images/consulta-en-linea/desktop-background.webp")',
+					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./src/assets/images/desktop-background.webp")',
 			}),
 			animation: {
 				float: 'float 2s ease-in-out infinite',

@@ -17,7 +17,7 @@ export function ContentCard(props) {
 
 	return (
 		<div
-			className={`${cardContainer} text-white p-3 shadow-xl w-full max-w-[340px] h-32 flex relative rounded-lg sm:rounded-xl z-10 animate-float`}>
+			className={`${cardContainer} text-white p-3 shadow-xl w-full max-w-[340px] h-32 flex items-center relative rounded-lg sm:rounded-xl z-10 animate-float`}>
 			<Link
 				to={LinkTo}
 				className={`${LinkClass} flex items-center w-full`}>

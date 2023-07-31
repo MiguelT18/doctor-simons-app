@@ -52,7 +52,7 @@ export function DarkButton() {
 			onClick={handleButtonClick}
 			className={`fixed ${
 				isScrolled ? 'top-0' : 'bottom-0'
-			} left-0 m-5 cursor-pointer z-50`}>
+			} left-0 m-3 cursor-pointer z-50`}>
 			<img
 				src={roundButton}
 				alt='round button element'

@@ -16,15 +16,17 @@ export function Content() {
 				Encuentra sus redes sociales y consulta en línea en un solo
 				lugar.
 			</p>
-			<div className='max-w-[1000px] mx-auto grid lg:grid-cols-2 justify-items-center gap-20 pt-16 pb-10 px-6'>
-				<ContentCard
-					title='Consulta en Línea'
-					text='Atención médica en tiempo real por Internet.'
-					LinkTo='/consulta_online'
-					cardContainer='bg-gradient-linear-light dark:bg-gradient-linear-dark'
-					imgSrc={ConsultaOnline}
-					imgClass='-right-2 bottom-0 w-36'
-				/>
+			<div className='max-w-[1000px] mx-auto grid md:grid-cols-2 max-md:justify-items-center gap-20 pt-16 pb-10 px-6'>
+				<div className='flex justify-end'>
+					<ContentCard
+						title='Consulta en Línea'
+						text='Atención médica en tiempo real por Internet.'
+						LinkTo='/consulta_online'
+						cardContainer='bg-gradient-linear-light dark:bg-gradient-linear-dark'
+						imgSrc={ConsultaOnline}
+						imgClass='-right-2 bottom-0 w-36'
+					/>
+				</div>
 				<ContentCard
 					title='Newsletter'
 					text='Recibe consejos exclusivos para mejorar tu salud.'
@@ -35,14 +37,16 @@ export function Content() {
 					imgSrc={Newsletter}
 					imgClass='left-0 bottom-0 w-40'
 				/>
-				<ContentCard
-					title='Mi TikTok'
-					text='Descubre nuestros consejos de salud en TikTok.'
-					LinkTo='https://www.tiktok.com/@drsimonscristian'
-					cardContainer='bg-gradient-linear-tiktok'
-					imgSrc={TikTok}
-					imgClass='right-0 bottom-0 w-32'
-				/>
+				<div className='flex justify-end'>
+					<ContentCard
+						title='Mi TikTok'
+						text='Descubre nuestros consejos de salud en TikTok.'
+						LinkTo='https://www.tiktok.com/@drsimonscristian'
+						cardContainer='bg-gradient-linear-tiktok'
+						imgSrc={TikTok}
+						imgClass='right-0 bottom-0 w-32'
+					/>
+				</div>
 				<ContentCard
 					title='Mi Instagram'
 					text='Conéctate conmigo en Instagram para consejos de bienestar.'
@@ -57,7 +61,7 @@ export function Content() {
 					title='Mi Facebook'
 					text='Entérate de las últimas noticias y consejos de salud.'
 					LinkTo='https://www.facebook.com/drcristiansimons'
-					cardContainer='bg-gradient-linear-facebook lg:col-span-2'
+					cardContainer='bg-gradient-linear-facebook md:col-span-2 mx-auto'
 					imgSrc={Facebook}
 					imgClass='-right-4 bottom-0 w-40'
 				/>
