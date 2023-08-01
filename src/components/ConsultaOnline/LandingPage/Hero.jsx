@@ -1,8 +1,32 @@
+import { useState, useEffect } from 'react';
+
 import { NextNavButton } from '../../NextNavButton';
 
 export function Hero() {
+	const [paddingTop, setPaddingTop] = useState(0);
+
+	useEffect(() => {
+		const adjustPaddingTop = () => {
+			const headerHeight =
+				document.getElementById('hero-header').offsetHeight;
+			setPaddingTop(headerHeight + 20);
+		};
+
+		adjustPaddingTop(); // Ajusta el padding-top inicialmente
+
+		window.addEventListener('resize', adjustPaddingTop); // Ajusta el padding-top cada vez que se redimensiona la página
+
+		return () => {
+			// Limpia el event listener cuando el componente se desmonta
+			window.removeEventListener('resize', adjustPaddingTop);
+		};
+	}, []);
+
 	return (
-		<section className='text-white h-screen bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed md:bg-hero-desk-pattern pt-44 px-5'>
+		<section
+			id='hero-section'
+			className='text-white h-screen bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed md:bg-hero-desk-pattern px-5'
+			style={{ paddingTop: `${paddingTop}px` }}>
 			<h1 className='text-lg text-center uppercase font-bold font-my-montserrat pb-5'>
 				Revela tu belleza con la rinoplastia personalizada del Dr.
 				Simons

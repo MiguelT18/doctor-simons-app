@@ -141,5 +141,5 @@ h6 {
 #hero-header {
 	position: absolute;
 	backdrop-filter: blur(2px);
-	background-color: rgba(1, 91, 204, 0.5);
+	-webkit-backdrop-filter: blur(2px);
 }
