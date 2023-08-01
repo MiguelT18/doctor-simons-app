@@ -6,11 +6,11 @@ import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
 
 export function Proceso() {
 	return (
-		<div className='bg-gradient-linear-light dark:bg-gradient-linear-dark mx-5 -mt-10 p-5 rounded-3xl shadow-custom dark:shadow-custom-dark'>
-			<h1 className='text-white text-center text-md uppercase font-my-montserrat font-bold pb-5'>
+		<div className='w-full max-w-[1300px] h-fit bg-gradient-linear-light dark:bg-gradient-linear-dark mx-auto -mt-10 px-6 py-8 rounded-3xl shadow-custom dark:shadow-custom-dark'>
+			<h1 className='text-white text-center text-lg uppercase font-my-montserrat font-bold pb-5'>
 				Este será tu proceso
 			</h1>
-			<div className='flex flex-wrap justify-center gap-5'>
+			<div className='w-full h-full flex flex-wrap justify-center gap-10'>
 				<ProcesoCard
 					title='Completa tu registro'
 					description='Deberás registrarte en la Consulta y llenar el formulario con tus datos.'

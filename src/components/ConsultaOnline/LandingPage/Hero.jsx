@@ -26,14 +26,14 @@ export function Hero() {
 	return (
 		<section
 			id='hero-section'
-			className='text-white h-screen grid lg:grid-cols-2 lg:gap-10 items-center bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed lg:bg-hero-desk-pattern px-5'
+			className='text-white grid lg:h-screen lg:grid-cols-2 lg:gap-10 items-center bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed lg:bg-hero-desk-pattern px-5 pb-24'
 			style={{ paddingTop: `${paddingTop}px` }}>
-			<div className='w-full max-w-[750px] mx-auto'>
+			<div className='w-full max-w-[500px] mx-auto'>
 				<h1 className='text-lg text-center lg:text-left uppercase font-bold font-my-montserrat'>
 					Revela tu belleza con la rinoplastia personalizada del Dr.
 					Simons
 				</h1>
-				<p className='text-sm text-center pt-4 lg:text-left'>
+				<p className='text-sm text-center pt-4 pb-5 lg:text-left'>
 					Embárcate en un viaje transformador con el Dr. Simons y
 					nuestro equipo dedicado. Descubre un plan personalizado para
 					tu rinoplastia, aprende los detalles del proceso y recibe un
@@ -56,7 +56,7 @@ export function Hero() {
 					title='Consulta en línea con el Dr. Cristian Simons: todo lo que necesitas saber'
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					allowfullscreen></iframe>
-				<div className='flex justify-center lg:hidden pt-6 pb-28'>
+				<div className='flex justify-center lg:hidden pt-6'>
 					<NextNavButton
 						next='/consulta_online/consideraciones'
 						text='Reserva tu consulta aquí'
