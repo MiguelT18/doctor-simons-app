@@ -45,6 +45,10 @@ export default {
 				'hero-desk-pattern':
 					'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("./src/assets/images/desktop-background.webp")',
 			}),
+			boxShadow: {
+				custom: '0px 4px 10px 0px #000',
+				'custom-dark': '0px 4px 10px 3px #000',
+			},
 			animation: {
 				float: 'float 2s ease-in-out infinite',
 				pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',

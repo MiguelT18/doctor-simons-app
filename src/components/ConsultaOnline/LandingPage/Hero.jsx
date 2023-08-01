@@ -56,7 +56,7 @@ export function Hero() {
 					title='Consulta en línea con el Dr. Cristian Simons: todo lo que necesitas saber'
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					allowfullscreen></iframe>
-				<div className='flex justify-center lg:hidden py-6'>
+				<div className='flex justify-center lg:hidden pt-6 pb-28'>
 					<NextNavButton
 						next='/consulta_online/consideraciones'
 						text='Reserva tu consulta aquí'

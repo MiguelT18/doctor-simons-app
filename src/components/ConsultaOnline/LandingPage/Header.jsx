@@ -21,7 +21,7 @@ export function Header() {
 	return (
 		<header
 			id='hero-header'
-			className='w-full h-fit bg-blue-light dark:bg-blue-dark dark:bg-opacity-50 bg-opacity-50 text-white text-center border-b-2 border-white py-3'>
+			className='w-full h-fit bg-blue-light dark:bg-blue-dark dark:bg-opacity-50 bg-opacity-50 text-white text-center border-b-2 border-white py-3 px-2'>
 			<h1 className='text-md uppercase font-bold mb-2'>
 				Regístrate en la Consulta en Línea con el Dr. Cristian Simons
 			</h1>
