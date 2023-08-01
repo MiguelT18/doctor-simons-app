@@ -22,7 +22,7 @@ export function Header() {
 		<header
 			id='hero-header'
 			className='w-full h-fit bg-blue-light dark:bg-blue-dark dark:bg-opacity-50 bg-opacity-50 text-white text-center border-b-2 border-white py-3'>
-			<h1 className='text-lg uppercase font-bold mb-2'>
+			<h1 className='text-md uppercase font-bold mb-2'>
 				Regístrate en la Consulta en Línea con el Dr. Cristian Simons
 			</h1>
 			<h2 className='text-md uppercase font-bold'>
