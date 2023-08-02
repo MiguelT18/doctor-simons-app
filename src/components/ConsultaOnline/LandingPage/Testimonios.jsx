@@ -9,7 +9,7 @@ import 'swiper/css';
 export function Testimonios() {
 	return (
 		<section className='px-5 pb-6'>
-			<h1 className='text-center text-lg text-blue-light darktext-blue-dark font-my-montserrat uppercase font-bold py-5'>
+			<h1 className='text-center text-lg text-blue-light dark:text-white font-my-montserrat uppercase font-bold py-5'>
 				Esto es lo que opinan los demás
 			</h1>
 			<Swiper
