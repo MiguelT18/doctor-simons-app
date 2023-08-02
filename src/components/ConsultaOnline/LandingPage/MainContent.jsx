@@ -2,6 +2,7 @@ import { Header } from './Header';
 import { Hero } from './Hero';
 import { Proceso } from './Proceso';
 import { MainCopy } from './MainCopy';
+import { Testimonios } from './Testimonios';
 import { Footer } from '../../Footer';
 
 export function MainContent() {
@@ -10,10 +11,11 @@ export function MainContent() {
 			<Header />
 			<main>
 				<Hero />
-				<div className='mx-8 mb-12'>
+				<section className='mx-8 mb-12'>
 					<Proceso />
-				</div>
+				</section>
 				<MainCopy />
+				<Testimonios />
 			</main>
 			<Footer />
 		</>
