@@ -27,7 +27,7 @@ export function DarkButton() {
 
 	const handleScroll = () => {
 		const position = window.scrollY;
-		const specificPosition = 100;
+		const specificPosition = 500;
 		if (position > specificPosition) {
 			setIsScrolled(true);
 		} else {

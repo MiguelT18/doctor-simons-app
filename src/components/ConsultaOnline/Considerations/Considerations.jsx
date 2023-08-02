@@ -36,7 +36,7 @@ export function Considerations() {
 				text='Al realizar el proceso de la consulta en línea, tendrás un plazo de siete días continuos, para concretar la misma posterior a esto deberás ingresar como una nueva consulta.'
 				imgSrc={WarningIcon}
 				customConsiderationsCard='text-white bg-gradient-linear-light dark:bg-gradient-linear-dark rounded-md p-3 mx-auto my-6 relative'
-				customImgClass='w-16 absolute -right-3 -top-6 animate-bounce'
+				customImgClass='max-w-[50px] h-fit absolute -right-2 -top-2 animate-bounce'
 			/>
 			<div className='w-full flex justify-center mb-5'>
 				<NextNavButton next='/consideraciones/formulario/paso1' />
