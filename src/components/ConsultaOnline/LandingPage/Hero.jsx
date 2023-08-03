@@ -26,7 +26,7 @@ export function Hero() {
 	return (
 		<section
 			id='hero-section'
-			className='text-white grid lg:h-screen lg:grid-cols-2 lg:gap-10 items-center bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed lg:bg-hero-desk-pattern px-5 pb-24'
+			className='text-white grid h-full lg:h-screen lg:grid-cols-2 lg:gap-10 items-center bg-hero-mob-pattern bg-center bg-no-repeat bg-cover bg-fixed lg:bg-hero-desk-pattern px-5 pb-24'
 			style={{ paddingTop: `${paddingTop}px` }}>
 			<div className='w-full max-w-[500px] mx-auto'>
 				<h1 className='text-lg text-center lg:text-left uppercase font-bold font-my-montserrat'>
@@ -40,7 +40,7 @@ export function Hero() {
 					presupuesto transparente. ¡Estamos aquí para hacer realidad
 					la nariz de tus sueños!
 				</p>
-				<div className='flex justify-start max-lg:hidden py-5'>
+				<div className='flex justify-center lg:justify-normal pb-8'>
 					<NextNavButton
 						next='/consulta_online/consideraciones'
 						text='Reserva tu consulta aquí'
@@ -56,13 +56,6 @@ export function Hero() {
 					title='Consulta en línea con el Dr. Cristian Simons: todo lo que necesitas saber'
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					allowFullScreen></iframe>
-				<div className='flex justify-center lg:hidden pt-6'>
-					<NextNavButton
-						next='/consulta_online/consideraciones'
-						text='Reserva tu consulta aquí'
-						icon={faCalendarCheck}
-					/>
-				</div>
 			</div>
 		</section>
 	);

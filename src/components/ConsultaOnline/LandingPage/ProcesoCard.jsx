@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function ProcesoCard({ title, description, icon }) {
 	return (
-		<div className='bg-white text-dark dark:bg-gray-900 dark:text-white w-full max-w-[280px] h-50 flex flex-col items-start gap-3  p-5'>
+		<div className='bg-white text-dark dark:bg-gray-900 dark:text-white w-full max-w-[260px] mx-auto flex flex-col justify-stretch items-start gap-3  p-5'>
 			<FontAwesomeIcon
 				className='text-4xl text-black dark:text-white'
 				icon={icon}

@@ -27,11 +27,11 @@ export function MainCopy() {
 	return (
 		<section className='w-full max-w-[1500px] mx-auto grid gap-5 lg:gap-0 bg-white dark:bg-slate-900 text-dark dark:text-white'>
 			<div className='lg:grid lg:grid-cols-2'>
-				<div className='max-w-[600px] lg:p-6 pt-6 px-5 mx-auto'>
-					<h1 className='text-lg text-center lg:text-start font-my-montserrat font-bold uppercase pb-4'>
-						Esta consulta es para ti si
+				<div className='max-w-[600px] lg:pt-10 pt-6 px-5 mx-auto'>
+					<h1 className='text-lg text-center lg:text-start font-my-montserrat font-bold uppercase pb-6'>
+						Esta consulta es para ti si...
 					</h1>
-					<ul className='text-sm text-center lg:text-start flex flex-col gap-3'>
+					<ul className='text-sm text-center lg:text-start flex flex-col gap-5'>
 						{Copy1.map((_, index) => (
 							<li key={index}>
 								{emoji} {_}
@@ -50,18 +50,18 @@ export function MainCopy() {
 			<span className='block lg:hidden relative h-[2px] w-[80%] max-w-[390px] mx-auto my-5 bg-black dark:bg-white after:block after:w-[7px] after:h-[7px] after:bg-black after:dark:bg-white after:rotate-45 after:absolute after:-top-[3px] before:block before:w-[7px] before:h-[7px] before:bg-black before:dark:bg-white before:rotate-45 before:absolute before:-top-[3px] before:right-0'></span>
 
 			<div className='lg:grid lg:grid-cols-2 lg:grid-flow-col-reverse'>
-				<div className='max-w-[600px] order-2 lg:order-1 lg:p-6 pb-6 px-5 mx-auto'>
-					<h1 className='text-lg text-center lg:text-start font-my-montserrat font-bold uppercase pb-4'>
+				<div className='max-w-[600px] order-2 lg:order-1 lg:py-10 pb-6 px-5 mx-auto'>
+					<h1 className='text-lg text-center lg:text-start font-my-montserrat font-bold uppercase pb-6'>
 						El cambio en tu apariencia que estabas buscando
 					</h1>
-					<ul className='text-sm text-center lg:text-start flex flex-col gap-3'>
+					<ul className='text-sm text-center lg:text-start flex flex-col gap-5'>
 						{Copy2.map((_, index) => (
 							<li key={index}>
 								{emoji} {_}
 							</li>
 						))}
 					</ul>
-					<div className='flex justify-center lg:justify-start pt-4'>
+					<div className='flex justify-center lg:justify-start pt-6'>
 						<NextNavButton
 							icon={faCalendarCheck}
 							next='/consulta_online/consideraciones'

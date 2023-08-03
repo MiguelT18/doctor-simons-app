@@ -11,7 +11,7 @@ export function MainContent() {
 			<Header />
 			<main>
 				<Hero />
-				<section className='mx-8 mb-12'>
+				<section className='flex justify-center pb-20 mx-8'>
 					<Proceso />
 				</section>
 				<MainCopy />
