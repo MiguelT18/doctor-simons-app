@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+
+import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
+import { NextNavButton } from '../../NextNavButton';
 import testimoniosData from './testimonios.json';
 
 import { TestimonioCard } from './TestimonioCard';
@@ -69,6 +72,13 @@ export function Testimonios() {
 					</SwiperSlide>
 				))}
 			</Swiper>
+			<div className='flex justify-center lg:justify-start pt-4 pb-8'>
+				<NextNavButton
+					icon={faCalendarCheck}
+					next='/consulta_online/consideraciones'
+					text='Reserva tu consulta aquí'
+				/>
+			</div>
 		</section>
 	);
 }

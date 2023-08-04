@@ -1,6 +1,3 @@
-import { NextNavButton } from '../../NextNavButton';
-import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
-
 import CopyImg1 from '../../../assets/images/consulta-landing-copy1.webp';
 import CopyImg2 from '../../../assets/images/consulta-landing-copy2.webp';
 
@@ -61,13 +58,6 @@ export function MainCopy() {
 							</li>
 						))}
 					</ul>
-					<div className='flex justify-center lg:justify-start pt-6'>
-						<NextNavButton
-							icon={faCalendarCheck}
-							next='/consulta_online/consideraciones'
-							text='Reserva tu consulta aquí'
-						/>
-					</div>
 				</div>
 				<img
 					src={CopyImg2}
