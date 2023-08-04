@@ -1,8 +1,10 @@
 .swiper-button-next {
 	right: 20%;
+	box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .swiper-button-prev {
 	left: 20%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .swiper-button-next,
@@ -16,6 +18,7 @@
 	top: 80%;
 	margin-top: 5px;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
 	width: fit-content;

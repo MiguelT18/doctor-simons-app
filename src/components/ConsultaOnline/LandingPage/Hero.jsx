@@ -33,7 +33,7 @@ export function Hero() {
 					Revela tu belleza con la rinoplastia personalizada del Dr.
 					Simons
 				</h1>
-				<p className='text-sm text-center pt-4 pb-5 lg:text-left'>
+				<p className='text-sm text-center pt-4 pb-5 lg:pb-10 lg:text-left'>
 					Embárcate en un viaje transformador con el Dr. Simons y
 					nuestro equipo dedicado. Descubre un plan personalizado para
 					tu rinoplastia, aprende los detalles del proceso y recibe un
