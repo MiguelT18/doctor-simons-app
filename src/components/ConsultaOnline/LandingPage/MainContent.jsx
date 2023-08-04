@@ -3,6 +3,7 @@ import { Hero } from './Hero';
 import { Proceso } from './Proceso';
 import { MainCopy } from './MainCopy';
 import { Testimonios } from './Testimonios';
+import { SocialMedia } from './SocialMedia';
 import { Footer } from '../../Footer';
 
 export function MainContent() {
@@ -16,6 +17,7 @@ export function MainContent() {
 				</section>
 				<MainCopy />
 				<Testimonios />
+				<SocialMedia />
 			</main>
 			<Footer />
 		</>
