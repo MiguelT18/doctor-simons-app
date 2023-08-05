@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
-import { NextNavButton } from '../../NextNavButton';
+import { NextNavButton } from '../../../NextNavButton';
 import testimoniosData from './testimonios.json';
 
 import { TestimonioCard } from './TestimonioCard';
@@ -16,8 +16,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-// Import Swiper custom styles
-import './Styles/swiper_slides.css';
+//? Import Swiper custom styles
+import '../Styles/swiper_slides.css';
 
 export function Testimonios() {
 	const [users, setUsers] = useState([]);
@@ -56,7 +56,7 @@ export function Testimonios() {
 
 	return (
 		<section className='px-5'>
-			<h1 className='text-center text-lg text-blue-light dark:text-white font-my-montserrat uppercase font-bold pt-8 pb-5'>
+			<h1 className='text-center text-lg text-blue-light dark:text-white font-my-montserrat uppercase font-bold lg:pt-14 pt-8 lg:pb-10 pb-5'>
 				Esto es lo que opinan los demás
 			</h1>
 			<Swiper
@@ -72,7 +72,7 @@ export function Testimonios() {
 					</SwiperSlide>
 				))}
 			</Swiper>
-			<div className='flex justify-center pt-4 pb-8'>
+			<div className='flex justify-center lg:pt-8 pt-4 lg:pb-12 pb-8'>
 				<NextNavButton
 					icon={faCalendarCheck}
 					next='/consulta_online/consideraciones'

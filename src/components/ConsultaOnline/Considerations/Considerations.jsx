@@ -39,7 +39,10 @@ export function Considerations() {
 				customImgClass='max-w-[50px] h-fit absolute -right-2 -top-2 animate-bounce'
 			/>
 			<div className='w-full flex justify-center mb-5'>
-				<NextNavButton next='/consideraciones/formulario/paso1' />
+				<NextNavButton
+					text='¡Registrarme ya!'
+					next='/consideraciones/formulario/paso1'
+				/>
 			</div>
 		</main>
 	);
