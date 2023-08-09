@@ -67,7 +67,7 @@ export const routes = [
 						element: lazy(
 							async () =>
 								await import(
-									'../pages/consulta_online/form/Paso1'
+									'../pages/consulta_online/form/Paso1/Paso1'
 								)
 						),
 					},
@@ -77,7 +77,7 @@ export const routes = [
 						element: lazy(
 							async () =>
 								await import(
-									'../pages/consulta_online/form/Paso2'
+									'../pages/consulta_online/form/Paso2/Paso2'
 								)
 						),
 					},
@@ -87,7 +87,7 @@ export const routes = [
 						element: lazy(
 							async () =>
 								await import(
-									'../pages/consulta_online/form/Paso3'
+									'../pages/consulta_online/form/Paso3/Paso3'
 								)
 						),
 					},
@@ -97,7 +97,7 @@ export const routes = [
 						element: lazy(
 							async () =>
 								await import(
-									'../pages/consulta_online/form/Paso4'
+									'../pages/consulta_online/form/Paso4/Paso4'
 								)
 						),
 					},
@@ -107,7 +107,7 @@ export const routes = [
 						element: lazy(
 							async () =>
 								await import(
-									'../pages/consulta_online/form/Paso5'
+									'../pages/consulta_online/form/Paso5/Paso5'
 								)
 						),
 					},
