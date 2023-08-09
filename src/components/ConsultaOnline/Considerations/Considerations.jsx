@@ -41,7 +41,7 @@ export function Considerations() {
 			<div className='w-full flex justify-center mb-5'>
 				<NextNavButton
 					text='¡Registrarme ya!'
-					next='/consideraciones/formulario/paso1'
+					next='/consulta_online/consideraciones/paso1'
 				/>
 			</div>
 		</main>

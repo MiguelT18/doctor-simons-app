@@ -8,10 +8,12 @@ export function NextNavButton({ next, text, icon }) {
 			className='bg-main-red text-white text-sm italic font-bold py-2 px-3 rounded-md'
 			to={next}>
 			{text}
-			<FontAwesomeIcon
-				className='pl-3'
-				icon={icon}
-			/>
+			{icon && (
+				<FontAwesomeIcon
+					className='pl-3'
+					icon={icon}
+				/>
+			)}
 		</Link>
 	);
 }

@@ -1,9 +1,9 @@
-import { Header } from './Header';
-import { Hero } from './Hero';
-import { Proceso } from './Proceso';
-import { MainCopy } from './MainCopy';
-import { Testimonios } from './Testimonios';
-import { SocialMedia } from './SocialMedia';
+import { Header } from './Header/Header';
+import { Hero } from './Hero/Hero';
+import { Proceso } from './ProcesosSection/Proceso';
+import { MainCopy } from './CopySection/MainCopy';
+import { Testimonios } from './TestimoniosSection/Testimonios';
+import { SocialMedia } from './SocialMedia/SocialMedia';
 import { Footer } from '../../Footer';
 
 export function MainContent() {
