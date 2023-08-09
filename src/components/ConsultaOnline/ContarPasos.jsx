@@ -40,7 +40,7 @@ export function ContarPasos() {
 					<Link
 						className={`bg-white text-dark p-4 rounded-full flex items-center justify-center w-10 h-10 md:w-12 md:h-12 text-md font-bold ${
 							location.pathname === step.path
-								? 'bg-[#FFA800] text-white'
+								? 'bg-just-yellow text-white'
 								: ''
 						}`}
 						to={`/consulta_online/consideraciones/paso${step.number}`}
