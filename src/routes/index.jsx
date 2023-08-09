@@ -41,12 +41,81 @@ export const routes = [
 						await import('../pages/consulta_online/ConsultaEnLinea')
 				),
 			},
+			//? Consideraciones
 			{
 				path: 'consideraciones',
-				element: lazy(
-					async () =>
-						await import('../pages/consulta_online/Consideraciones')
-				),
+				element: Fragment,
+				children: [
+					{
+						path: '',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/Consideraciones'
+								)
+						),
+					},
+					//? Paso #1:
+					{
+						path: 'paso1',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/form/Paso1'
+								)
+						),
+					},
+					//? Paso #2:
+					{
+						path: 'paso2',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/form/Paso2'
+								)
+						),
+					},
+					//? Paso #3:
+					{
+						path: 'paso3',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/form/Paso3'
+								)
+						),
+					},
+					//? Paso #4:
+					{
+						path: 'paso4',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/form/Paso4'
+								)
+						),
+					},
+					//? Paso #5:
+					{
+						path: 'paso5',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/form/Paso5'
+								)
+						),
+					},
+					//? Formulario de Pago
+					{
+						path: 'payment_form',
+						element: lazy(
+							async () =>
+								await import(
+									'../pages/consulta_online/PaymentForm'
+								)
+						),
+					},
+				],
 			},
 		],
 	},
@@ -54,7 +123,22 @@ export const routes = [
 	// Newsletter
 	{
 		path: '/newsletter',
-		element: lazy(async () => await import('../pages/Newsletter')),
+		element: Fragment,
+		children: [
+			{
+				path: '',
+				element: lazy(
+					async () => await import('../pages/newsletter/Newsletter')
+				),
+			},
+			{
+				path: 'thankspage_newsletter',
+				element: lazy(
+					async () =>
+						await import('../pages/newsletter/ThanksNewsletterPage')
+				),
+			},
+		],
 	},
 
 	// Página 404
