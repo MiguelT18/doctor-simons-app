@@ -12,7 +12,9 @@ export function ConsiderationsCard(props) {
 				src={imgSrc}
 				alt=''
 			/>
-			<h1 className='text-md uppercase pb-1'>{title}</h1>
+			<h1 className='text-md uppercase pb-2 font-bold tracking-wider'>
+				{title}
+			</h1>
 			<p className='text-sm font-my-sans'>{text}</p>
 		</div>
 	);

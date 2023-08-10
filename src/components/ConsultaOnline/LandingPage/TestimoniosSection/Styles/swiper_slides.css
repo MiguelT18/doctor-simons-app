@@ -1,9 +1,7 @@
 .swiper-button-next {
-	right: 20%;
 	box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .swiper-button-prev {
-	left: 20%;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -11,12 +9,10 @@
 .swiper-button-prev {
 	color: #fff;
 	background-color: #fe2828;
-	width: 55px;
-	height: 55px;
+	width: 50px;
+	height: 50px;
 	border-radius: 100%;
-	position: absolute;
-	top: 80%;
-	margin-top: 5px;
+	top: 50%;
 }
 
 .swiper-button-next::after,
@@ -24,4 +20,16 @@
 	width: fit-content;
 	height: fit-content;
 	--swiper-navigation-size: 25px;
+}
+
+.swiper-pagination {
+	padding: 25px 0;
+	position: static;
+}
+
+@media all and (max-width: 770px) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none;
+	}
 }

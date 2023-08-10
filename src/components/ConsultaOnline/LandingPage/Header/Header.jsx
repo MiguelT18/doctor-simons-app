@@ -4,7 +4,7 @@ export function Header() {
 	const [contador, setContador] = useState(0);
 
 	useEffect(() => {
-		const increment = (1000 / 5000) * 10; // Incremento cada 10ms para llegar a 1000 en 2000ms
+		const increment = (1000 / 5000) * 10;
 		const intervalID = setInterval(() => {
 			setContador((prevContador) => {
 				const newContador = prevContador + increment;
@@ -13,9 +13,10 @@ export function Header() {
 					return 1000;
 				}
 				return newContador;
-			}, 10);
-			return () => clearInterval(intervalID);
-		});
+			});
+		}, 10);
+
+		return () => clearInterval(intervalID);
 	}, []);
 
 	return (
@@ -26,7 +27,7 @@ export function Header() {
 				Regístrate en la Consulta en Línea con el Dr. Cristian Simons
 			</h1>
 			<h2 className='text-md lg:text-lg uppercase font-bold'>
-				<span className='text-green-500 font-my-montserrat'>
+				<span className='text-just-yellow font-my-montserrat'>
 					+{Math.round(contador)}
 				</span>{' '}
 				Pacientes Satisfechos

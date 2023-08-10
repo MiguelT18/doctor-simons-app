@@ -1,4 +1,4 @@
-import { ContarPasos } from '../../../../components/ConsultaOnline/ContarPasos';
+import { ContarPasos } from '../../../../components/ConsultaOnline/Formulario/ContarPasos';
 import FormPaso1 from './form';
 
 import { PrevNavButton } from '../../../../components/PrevNavButton';

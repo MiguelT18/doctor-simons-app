@@ -1,4 +1,4 @@
-import { ContarPasos } from '../../../../components/ConsultaOnline/ContarPasos';
+import { ContarPasos } from '../../../../components/ConsultaOnline/Formulario/ContarPasos';
 import { DarkButton } from '../../../../components/DarkButton';
 
 const Paso3 = () => {

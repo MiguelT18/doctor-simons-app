@@ -8,18 +8,21 @@ const FormPaso1 = () => {
 			</p>
 
 			<div className='grid gap-5 place-content-center'>
-				<div className='flex flex-wrap'>
+				<div className='w-full flex sm:flex-col gap-5'>
 					<input
+						className='w-full text-sm text-dark'
 						type='text'
 						placeholder='Nombres'
 					/>
 					<input
+						className='w-full text-sm text-dark'
 						type='text'
 						placeholder='Apellidos'
 					/>
 				</div>
 
 				<select
+					className='text-sm text-dark'
 					name='genders'
 					id='genders'>
 					<option disabled>Género</option>
@@ -28,6 +31,7 @@ const FormPaso1 = () => {
 				</select>
 
 				<select
+					className='text-sm text-dark'
 					name='document'
 					id='document'>
 					<option disabled>Tipo de documento</option>
@@ -36,10 +40,13 @@ const FormPaso1 = () => {
 				</select>
 
 				<input
+					className='w-full text-sm text-dark'
 					type='number'
 					placeholder='Número de documento'
 				/>
-				<label htmlFor='email-input'>
+				<label
+					className='w-full text-sm text-dark'
+					htmlFor='email-input'>
 					<input
 						id='email-input'
 						type='email'

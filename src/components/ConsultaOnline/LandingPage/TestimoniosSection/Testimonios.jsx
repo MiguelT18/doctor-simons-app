@@ -8,16 +8,15 @@ import { TestimonioCard } from './TestimonioCard';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 //? Import Swiper custom styles
-import '../Styles/swiper_slides.css';
+import './Styles/swiper_slides.css';
 
 export function Testimonios() {
 	const [users, setUsers] = useState([]);
@@ -55,23 +54,26 @@ export function Testimonios() {
 	}
 
 	return (
-		<section className='px-5'>
+		<section className='px-5 relative'>
 			<h1 className='text-center text-lg text-blue-light dark:text-white font-my-montserrat uppercase font-bold lg:pt-14 pt-8 lg:pb-10 pb-5'>
 				Esto es lo que opinan los demás
 			</h1>
+
 			<Swiper
-				className='w-full max-w-[520px]'
-				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				modules={[Navigation, Pagination, A11y]}
 				navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: false }}
 				autoHeight={true}
 				spaceBetween={50}
 				slidesPerView={1}>
-				{users.map((user, index) => (
-					<SwiperSlide key={index}>
+				{users.map((user) => (
+					<SwiperSlide key={user.login.uuid}>
 						<TestimonioCard user={user} />
 					</SwiperSlide>
 				))}
 			</Swiper>
+
 			<div className='flex justify-center lg:pt-8 pt-4 lg:pb-12 pb-8'>
 				<NextNavButton
 					icon={faCalendarCheck}

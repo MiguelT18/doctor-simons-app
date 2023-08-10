@@ -35,10 +35,10 @@ export function Considerations() {
 				title='Advertencia'
 				text='Al realizar el proceso de la consulta en línea, tendrás un plazo de siete días continuos, para concretar la misma posterior a esto deberás ingresar como una nueva consulta.'
 				imgSrc={WarningIcon}
-				customConsiderationsCard='text-white bg-gradient-linear-light dark:bg-gradient-linear-dark rounded-md p-3 mx-auto my-6 relative'
+				customConsiderationsCard='text-white bg-gradient-linear-light dark:bg-gradient-linear-dark rounded-md py-4 px-5 pb-5 mx-auto mt-6 mb-8 relative'
 				customImgClass='max-w-[50px] h-fit absolute -right-2 -top-2 animate-bounce'
 			/>
-			<div className='w-full flex justify-center mb-5'>
+			<div className='w-full flex justify-center mb-10'>
 				<NextNavButton
 					text='¡Registrarme ya!'
 					next='/consulta_online/consideraciones/paso1'

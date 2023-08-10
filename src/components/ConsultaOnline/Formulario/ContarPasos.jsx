@@ -36,18 +36,21 @@ export function ContarPasos() {
 			</p>
 			<span className='w-full h-0.5 block bg-white'></span>
 			<ul className='flex justify-center gap-5 my-4'>
-				{steps.map((step, index) => (
-					<Link
-						className={`bg-white text-dark p-4 rounded-full flex items-center justify-center w-10 h-10 md:w-12 md:h-12 text-md font-bold ${
-							location.pathname === step.path
-								? 'bg-just-yellow text-white'
-								: ''
-						}`}
-						to={`/consulta_online/consideraciones/paso${step.number}`}
-						key={index}>
-						{step.number}
-					</Link>
-				))}
+				{steps.map((step, index) => {
+					const isActiveStep = location.pathname === step.path;
+					return (
+						<Link
+							className={`${
+								isActiveStep
+									? 'bg-just-yellow text-white'
+									: 'bg-white text-dark'
+							} p-4 rounded-full flex items-center justify-center w-10 h-10 md:w-12 md:h-12 text-md font-bold`}
+							to={`/consulta_online/consideraciones/paso${step.number}`}
+							key={index}>
+							{step.number}
+						</Link>
+					);
+				})}
 			</ul>
 			<span className='w-full h-0.5 block bg-white'></span>
 		</header>

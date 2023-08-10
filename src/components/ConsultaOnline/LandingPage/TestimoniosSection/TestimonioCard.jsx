@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
 export function TestimonioCard({ user }) {
+	const { picture, name, login, testimonio } = user;
+
 	if (!user) {
 		return <h1 className='text-md text-center'>Loading...</h1>;
 	}
 
-	const { picture, name, login, testimonio } = user;
-
 	return (
-		<article className='w-full max-w-[520px] mx-auto relative bg-gradient-linear-light text-white dark:bg-gradient-linear-dark p-4 pt-10 mt-10 mb-28 rounded-xl cursor-pointer'>
+		<article className='w-full max-w-[520px] mx-auto relative bg-gradient-linear-light text-white dark:bg-gradient-linear-dark p-4 pt-10 mt-10 rounded-xl cursor-pointer'>
 			<img
 				src={picture.medium}
 				alt={name.first}

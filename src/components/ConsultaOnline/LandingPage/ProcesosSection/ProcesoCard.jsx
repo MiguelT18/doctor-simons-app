@@ -1,7 +1,8 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export function ProcesoCard({ title, description, icon }) {
+function ProcesoCardComponent({ title, description, icon }) {
 	return (
 		<div className='bg-white text-dark dark:bg-gray-900 dark:text-white w-full max-w-[260px] mx-auto flex flex-col justify-stretch items-start gap-3  p-5'>
 			<FontAwesomeIcon
@@ -18,14 +19,16 @@ export function ProcesoCard({ title, description, icon }) {
 	);
 }
 
-ProcesoCard.defaultProps = {
+ProcesoCardComponent.defaultProps = {
 	title: 'Undefined Card',
 	description: 'Undefined description',
 	icon: null,
 };
 
-ProcesoCard.propTypes = {
+ProcesoCardComponent.propTypes = {
 	title: PropTypes.string,
 	description: PropTypes.string,
 	icon: PropTypes.object,
 };
+
+export const ProcesoCard = React.memo(ProcesoCardComponent);
