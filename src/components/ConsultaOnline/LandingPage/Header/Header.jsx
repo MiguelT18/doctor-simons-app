@@ -14,7 +14,7 @@ export function Header() {
 				}
 				return newContador;
 			});
-		}, 10);
+		}, 1);
 
 		return () => clearInterval(intervalID);
 	}, []);

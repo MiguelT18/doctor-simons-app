@@ -1,6 +1,7 @@
 import { lazy, Fragment, Suspense } from 'react';
 import { Route, Outlet } from 'react-router-dom';
 import ScrollToTop from '../components/ScrollToTop';
+import RouteLoading from '../components/RouteLoading';
 
 export default function renderRoutes(routes) {
 	return routes.map((route) => {
@@ -11,10 +12,7 @@ export default function renderRoutes(routes) {
 				key={route.path}
 				path={route.path}
 				element={
-					<Suspense
-						fallback={
-							<h1 className='text-center text-lg'>Loading..</h1>
-						}>
+					<Suspense fallback={<RouteLoading />}>
 						<ScrollToTop>
 							<Layout>
 								{route.children ? <Outlet /> : <Component />}

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export function NextNavButton({ next, text, icon }) {
 	return (
 		<Link
-			className='bg-main-red text-white text-sm italic font-bold py-2 px-3 rounded-md'
+			className='bg-main-red text-white text-sm italic font-bold py-2 px-3 rounded-md hover:scale-110 transition-transform duration-100 linear'
 			to={next}>
 			{text}
 			{icon && (

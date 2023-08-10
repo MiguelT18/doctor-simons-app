@@ -22,7 +22,7 @@ export function SocialMedia() {
 			<div className='flex justify-center gap-10 lg:gap-20'>
 				{logos.map((item, index) => (
 					<a
-						className='h-[50px]'
+						className='h-[50px] hover:scale-110 transition-transform duration-100 linear'
 						key={index}
 						href={socialMediaTo[item.name]}
 						target='_blank'

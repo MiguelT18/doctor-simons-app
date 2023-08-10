@@ -13,6 +13,7 @@
 	height: 50px;
 	border-radius: 100%;
 	top: 50%;
+	transition: transform 0.04s linear 0.04s;
 }
 
 .swiper-button-next::after,
@@ -22,9 +23,23 @@
 	--swiper-navigation-size: 25px;
 }
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	transform: scale(1.1);
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+	transform: scale(0.9);
+}
+
 .swiper-pagination {
 	padding: 25px 0;
 	position: static;
+}
+
+.dark .swiper-pagination-bullet {
+	background-color: #ddd;
 }
 
 @media all and (max-width: 770px) {
