@@ -27,7 +27,7 @@ export function Header() {
 				Regístrate en la Consulta en Línea con el Dr. Cristian Simons
 			</h1>
 			<h2 className='text-md lg:text-lg uppercase font-bold'>
-				<span className='text-just-yellow font-my-montserrat'>
+				<span className='text-green-500 dark:text-just-yellow font-my-montserrat'>
 					+{Math.round(contador)}
 				</span>{' '}
 				Pacientes Satisfechos
