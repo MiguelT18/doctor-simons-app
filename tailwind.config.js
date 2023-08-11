@@ -21,12 +21,18 @@ export default {
 				md: 'clamp(1rem, 6vw, 1.3rem)',
 				lg: 'clamp(1.2rem, 7.5vw, 1.6rem)',
 				xl: 'clamp(1.6rem, 9vw, 2.2rem)',
+				buttonSize: 'clamp(0.75rem, 4.2vw, 1rem)',
 			},
 			width: {
+				// Consulta en Línea
 				'header-img': 'clamp(80px, 23vw, 100px)',
 				'header-drname': 'clamp(180px, 52vw, 250px)',
 				'considerations-img': 'clamp(75px, 20vw, 100px)',
-				'warning-img': 'clamp(60px, 15vw, 75px)',
+				'warning-img': 'clamp(50px, 15vw, 60px)',
+
+				// Newsletter
+				'logo-header-clamp': 'clamp(180px, 80vw, 300px)',
+				'hero-clamp': 'clamp(340px, 40vw, 500px)',
 			},
 			backgroundImage: () => ({
 				'gradient-linear-light':

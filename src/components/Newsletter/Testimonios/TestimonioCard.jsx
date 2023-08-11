@@ -8,11 +8,11 @@ export function TestimonioCard({ user }) {
 	const { picture, name, login, testimonio } = user;
 
 	return (
-		<article className='w-full max-w-[520px] mx-auto relative bg-gradient-linear-light text-white dark:bg-gradient-linear-dark p-4 pt-10 mt-10 rounded-xl cursor-pointer'>
+		<article className='bg-opacity-10 bg-white w-full max-w-[520px] mx-auto relative border-2 dark:border-white text-white p-4 pt-10 mt-10 rounded-xl cursor-pointer'>
 			<img
 				src={picture.medium}
 				alt={name.first}
-				className='w-15 border-white border-2 -top-10 left-1/2 transform -translate-x-[50%] rounded-full absolute'
+				className='w-15 dark:border-white border-2 -top-10 left-1/2 transform -translate-x-[50%] rounded-full absolute'
 			/>
 			<div className='flex flex-col gap-2'>
 				<p className='text-sm text-center py-2'>{testimonio}</p>

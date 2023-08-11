@@ -9,6 +9,7 @@ export function Header() {
 	return (
 		<header className='flex justify-center py-4'>
 			<img
+				className='w-logo-header-clamp'
 				src={isDarkMode ? HeaderDarkImage : HeaderLightImage}
 				alt='Header Logo'
 			/>

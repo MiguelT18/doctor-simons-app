@@ -1,9 +1,8 @@
-// Font Awesome
-import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
-
 // Components
-import { NextNavButton } from '../../../NextNavButton';
 import { TestimonioCard } from './TestimonioCard';
+
+// Hooks
+import useTestimoniosData from '../../../hooks/useTestimoniosData';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,13 +14,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 //? Import Swiper custom styles
-import '../../../../components/styles/swiper_slides.css';
-
-// Hooks
-import useTestimoniosData from '../../../../hooks/useTestimoniosData';
+import '../../../components/styles/swiper_slides.css';
 
 export function Testimonios() {
-	const { users, error } = useTestimoniosData('consulta');
+	const { users, error } = useTestimoniosData('newsletter');
 
 	if (error) {
 		return (
@@ -32,9 +28,9 @@ export function Testimonios() {
 	}
 
 	return (
-		<section className='px-5 relative'>
-			<h1 className='text-center text-lg text-blue-light dark:text-white font-my-montserrat uppercase font-bold lg:pt-14 pt-8 lg:pb-10 pb-5'>
-				Esto es lo que opinan los demás
+		<section className='bg-gradient-linear-light dark:bg-gradient-linear-dark text-white px-5 pb-5'>
+			<h1 className='text-lg text-center uppercase font-bold py-6 md:py-8'>
+				Opiniones de mis suscriptores
 			</h1>
 
 			<Swiper
@@ -55,14 +51,6 @@ export function Testimonios() {
 						) : null
 					)}
 			</Swiper>
-
-			<div className='flex justify-center lg:pt-8 pt-4 lg:pb-12 pb-8'>
-				<NextNavButton
-					icon={faCalendarCheck}
-					next='/consulta_online/consideraciones'
-					text='Reserva tu consulta aquí'
-				/>
-			</div>
 		</section>
 	);
 }

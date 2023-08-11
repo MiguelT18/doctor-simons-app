@@ -3,7 +3,7 @@ import { PaymentCard } from '../../../components/ConsultaOnline/Considerations/P
 export function Header() {
 	return (
 		<header>
-			<h1 className='text-center text-blue-light dark:text-white text-lg font-my-montserrat font-bold uppercase py-4'>
+			<h1 className='text-center text-blue-light dark:text-white text-lg font-my-montserrat font-bold uppercase py-6'>
 				Consideraciones
 			</h1>
 			<div className='grid justify-items-center md:grid-cols-2 gap-6 max-w-[1000px] mx-auto px-5 pb-8'>

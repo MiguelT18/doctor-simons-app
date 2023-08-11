@@ -42,6 +42,10 @@
 	background-color: #ddd;
 }
 
+.swiper-pagination-bullet {
+	background-color: #15192e;
+}
+
 @media all and (max-width: 770px) {
 	.swiper-button-next,
 	.swiper-button-prev {
