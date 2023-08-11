@@ -1,29 +1,14 @@
 import { useState, useEffect } from 'react';
+import useDarkMode from '../hooks/useDarkMode';
+
 import LightRoundButton from '/src/assets/icons/light-round-button.svg';
 import LightSwitchElements from '/src/assets/icons/light-switch-elements.svg';
 import DarkRoundButton from '/src/assets/icons/night-round-button.svg';
 import DarkSwitchElements from '/src/assets/icons/night-switch-elements.svg';
 
 export function DarkButton() {
-	const [isDarkMode, setIsDarkMode] = useState(() => {
-		const savedTheme = localStorage.getItem('isDarkMode');
-		return savedTheme === 'true' ? true : false;
-	});
-
+	const { isDarkMode, toggleDarkMode } = useDarkMode();
 	const [isScrolled, setIsScrolled] = useState(false);
-
-	useEffect(() => {
-		if (isDarkMode) {
-			document.body.classList.add('dark');
-		} else {
-			document.body.classList.remove('dark');
-		}
-		localStorage.setItem('isDarkMode', isDarkMode);
-	}, [isDarkMode]);
-
-	const handleButtonClick = () => {
-		setIsDarkMode(!isDarkMode);
-	};
 
 	const handleScroll = () => {
 		const position = window.scrollY;
@@ -49,7 +34,7 @@ export function DarkButton() {
 
 	return (
 		<div
-			onClick={handleButtonClick}
+			onClick={toggleDarkMode}
 			className={`fixed ${
 				isScrolled ? 'top-0' : 'bottom-0'
 			} left-0 m-3 cursor-pointer z-50`}>
