@@ -1,7 +1,7 @@
 export function WelcomeCopy() {
 	return (
 		<article className='pb-5'>
-			<h1 className='text-blue-light dark:text-white text-md lg:text-lg text-center lg:text-start font-bold uppercase pb-4'>
+			<h1 className='text-blue-light dark:text-white text-md lg:text-lg text-center lg:text-start font-bold font-my-montserrat uppercase pb-4'>
 				¡Suscríbete al boletín de rinoplastia y salud nasal del dr.
 				simons: Transforma tu nariz, transforma tu vida!
 			</h1>

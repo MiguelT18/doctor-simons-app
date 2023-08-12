@@ -29,7 +29,7 @@ export function Testimonios() {
 
 	return (
 		<section className='bg-gradient-linear-light dark:bg-gradient-linear-dark text-white px-5 pb-5'>
-			<h1 className='text-lg text-center uppercase font-bold py-6 md:py-8'>
+			<h1 className='text-lg text-center uppercase font-bold font-my-montserrat py-6 md:py-8'>
 				Opiniones de mis suscriptores
 			</h1>
 

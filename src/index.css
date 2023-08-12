@@ -136,6 +136,10 @@ h6 {
 	color: #fff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*! Estilos personalizados */
 
 #hero-header {

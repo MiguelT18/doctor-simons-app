@@ -6,10 +6,6 @@
 
 ## Newsletter:
 
--   **Newsletter Home:** Construir el hero de la página.
--   **Newsletter Home:** Construir el slider de las opiniones de los suscriptores.
--   **Newsletter Home:** Construir el reminder de la página ('Únete gratis antes de que enviemos el email de hoy').
-
 -   **Newsletter ThanksPage:** Construir la página de gracias para la Newsletter.
 
 ## Consulta en Línea:
