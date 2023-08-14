@@ -10,6 +10,8 @@
 
 ## Consulta en Línea:
 
+-   FIXME: Arreglar bug en el manejo de rutas entre el último botón de la landing page y consideraciones, el scroll debe iniciar en una posición 0.
+
 -   **Landing Page:** Solucionar el error CORS (Cross-Origin Resource Sharing).
 
 -   **Formulario:** Construir los formularios de los pasos respectivos para el proceso de la consulta en línea.

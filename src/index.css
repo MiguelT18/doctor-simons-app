@@ -7,32 +7,28 @@
 */
 @font-face {
 	font-family: 'OpenSans';
-	src: url('../../public/fonts/Open_Sans/static/OpenSans-Bold.ttf')
-		format('woff2');
+	src: url('/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('woff2');
 	font-weight: 700;
 	font-style: 700;
 }
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url('../../public/fonts/Open_Sans/static/OpenSans-SemiBold.ttf')
-		format('woff2');
+	src: url('/fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('woff2');
 	font-weight: 600;
 	font-style: 600;
 }
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url('../../public/fonts/Open_Sans/static/OpenSans-Regular.ttf')
-		format('woff2');
+	src: url('/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('woff2');
 	font-weight: 400;
 	font-style: 400;
 }
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url('../../public/fonts/Open_Sans/static/OpenSans-Light.ttf')
-		format('woff2');
+	src: url('/fonts/Open_Sans/static/OpenSans-Light.ttf') format('woff2');
 	font-weight: 300;
 	font-style: 300;
 }
@@ -43,16 +39,14 @@
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('../../public/fonts/Montserrat/static/Montserrat-Bold.ttf')
-		format('woff2');
+	src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('woff2');
 	font-weight: 700;
 	font-style: 700;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('../../public/fonts/Montserrat/static/Montserrat-Medium.ttf')
-		format('woff2');
+	src: url('/fonts/Montserrat/static/Montserrat-Medium.ttf') format('woff2');
 	font-weight: 500;
 	font-style: 500;
 }
@@ -131,6 +125,14 @@ h6 {
 	isolation: isolate;
 }
 
+/*! Estilos personalizados */
+
+#hero-header {
+	position: absolute;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+}
+
 .dark {
 	background-color: #121212;
 	color: #fff;
@@ -140,10 +142,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-/*! Estilos personalizados */
-
-#hero-header {
-	position: absolute;
-	backdrop-filter: blur(2px);
-	-webkit-backdrop-filter: blur(2px);
+input:focus-visible {
+	outline: none;
+	border: 2px solid #ffa800;
 }

@@ -1,5 +1,5 @@
-import { ContarPasos } from '../../../../components/ConsultaOnline/Formulario/ContarPasos';
-import { DarkButton } from '../../../../components/DarkButton';
+import { ContarPasos } from '../../../components/ConsultaOnline/Formulario/ContarPasos';
+import { DarkButton } from '../../../components/DarkButton';
 
 const Paso5 = () => {
 	return (

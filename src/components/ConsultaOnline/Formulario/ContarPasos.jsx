@@ -27,11 +27,11 @@ export function ContarPasos() {
 	const location = useLocation();
 
 	return (
-		<header className='max-w-[1024px] mx-auto p-5'>
+		<header className='max-w-[900px] mx-auto p-5'>
 			<h1 className='text-lg font-my-montserrat text-center font-bold uppercase pb-1 md:tracking-wider'>
 				Datos Personales
 			</h1>
-			<p className='text-sm text-center pb-6'>
+			<p className='text-sm font-my-sans text-center pb-6'>
 				En este paso deberás proporcionar tus datos personales.
 			</p>
 			<span className='w-full h-0.5 block bg-white'></span>
