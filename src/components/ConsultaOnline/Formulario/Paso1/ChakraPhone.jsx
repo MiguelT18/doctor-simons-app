@@ -25,7 +25,7 @@ const ChakraPhone = ({ value, onChange }) => {
 						<Button
 							{...rootProps}
 							background='#fff'
-							px='10px'
+							px='20px'
 							mr='8px'>
 							{children}
 						</Button>

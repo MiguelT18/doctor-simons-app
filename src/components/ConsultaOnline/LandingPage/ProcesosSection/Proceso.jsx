@@ -35,7 +35,7 @@ export function Proceso() {
 	];
 
 	return (
-		<article className='w-fit h-fit flex flex-col gap-8 bg-gradient-linear-light dark:bg-gradient-linear-dark -mt-12 px-6 py-8 rounded-3xl shadow-custom dark:shadow-custom-dark'>
+		<article className='w-fit h-fit flex flex-col gap-8 bg-gradient-linear-light dark:bg-gradient-linear-dark -mt-12 px-4 py-8 rounded-3xl shadow-custom dark:shadow-custom-dark'>
 			<h1 className='text-white text-center text-lg uppercase font-my-montserrat font-bold'>
 				Este será tu proceso
 			</h1>

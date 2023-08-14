@@ -6,7 +6,7 @@ import { DarkButton } from '../../../components/DarkButton';
 
 const Paso1 = () => {
 	return (
-		<div className='bg-gradient-linear-light dark:bg-gradient-linear-dark text-white'>
+		<div className='h-full sm:h-screen bg-gradient-linear-light dark:bg-gradient-linear-dark text-white'>
 			<ContarPasos />
 			<FormPaso1 />
 			<PrevNavButton prev='/consulta_online/consideraciones' />
