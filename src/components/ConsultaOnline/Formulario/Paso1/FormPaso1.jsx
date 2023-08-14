@@ -39,7 +39,7 @@ const FormPaso1 = () => {
 				<p className='text-center font-my-sans text-sm pb-5'>
 					Completa la siguiente información.
 					<br />
-					Recibe un diagnóstico y presupuesto
+					Recibe un diagnóstico y presupuesto.
 				</p>
 				<div className='grid md:grid-cols-2 gap-4 pb-4 font-my-sans'>
 					<input
