@@ -2,9 +2,9 @@ import PaymentFormContent from '../../components/ConsultaOnline/PaymentForm/Paym
 
 const PaymentForm = () => {
 	return (
-		<div>
+		<>
 			<PaymentFormContent />
-		</div>
+		</>
 	);
 };
 

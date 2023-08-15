@@ -9,7 +9,7 @@ function ProcesoCardComponent({ title, description, icon }) {
 				className='text-4xl text-black dark:text-white'
 				icon={icon}
 			/>
-			<div className='flex flex-col gap-4'>
+			<div className='flex flex-col gap-2'>
 				<h1 className='w-fit text-md font-bold font-my-montserrat uppercase'>
 					{title}
 				</h1>

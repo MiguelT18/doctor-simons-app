@@ -1,5 +1,5 @@
 import { UploadPicture } from '../UploadPicture';
-import VistaPicado from '../../../../assets/images/consultaOnline/vista-en-picado.webp';
+import VistaPicado from '../../../../assets/images/consultaOnline/form/vista-en-picado.webp';
 
 const FormPaso5 = () => {
 	return (

@@ -71,7 +71,7 @@ export const UploadPicture = (props) => {
 						document.getElementById('imageInput').click()
 					}
 					className='text-sm text-center font-my-sans pt-4 underline cursor-pointer'>
-					Subir otra imagen
+					Cambiar por otra imagen
 					<FontAwesomeIcon
 						className='ml-2'
 						icon={faRotateRight}

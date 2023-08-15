@@ -1,5 +1,5 @@
 import { UploadPicture } from '../UploadPicture';
-import FotoPerfil from '../../../../assets/images/consultaOnline/foto-perfil.webp';
+import FotoPerfil from '../../../../assets/images/consultaOnline/form/foto-perfil.webp';
 
 const FormPaso4 = () => {
 	return (

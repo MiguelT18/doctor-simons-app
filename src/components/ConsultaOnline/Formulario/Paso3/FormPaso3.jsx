@@ -1,5 +1,5 @@
 import { UploadPicture } from '../UploadPicture';
-import FotoFrontal from '../../../../assets/images/consultaOnline/foto-frontal.webp';
+import FotoFrontal from '../../../../assets/images/consultaOnline/form/foto-frontal.webp';
 
 const FormPaso3 = () => {
 	return (
