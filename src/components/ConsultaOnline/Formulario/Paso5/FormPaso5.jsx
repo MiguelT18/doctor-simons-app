@@ -7,6 +7,7 @@ const FormPaso5 = () => {
 			<UploadPicture
 				title='Foto Vista en Picado'
 				description='Debes mantenerte con la vista hacia arriba en donde se aprecie tu rostro.'
+				nextStep='/consulta_online/consideraciones/payment_form'
 				imgSrc={VistaPicado}
 			/>
 		</>

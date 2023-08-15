@@ -43,7 +43,7 @@ const FormPaso2 = () => {
 	];
 
 	return (
-		<form className='mx-auto px-5'>
+		<form className='max-w-[900px] mx-auto px-5'>
 			<p className='text-center font-my-sans text-sm pb-5'>
 				Completa la siguiente información.
 				<br />

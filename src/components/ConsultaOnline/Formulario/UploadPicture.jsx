@@ -97,7 +97,7 @@ UploadPicture.propTypes = {
 	description: PropTypes.string,
 	nextStep: PropTypes.string,
 	nextButtonText: PropTypes.string,
-	imgSrc: PropTypes.object,
+	imgSrc: PropTypes.string,
 };
 
 UploadPicture.defaultProps = {
