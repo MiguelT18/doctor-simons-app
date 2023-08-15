@@ -5,10 +5,10 @@ import FormPaso2 from '../../../components/ConsultaOnline/Formulario/Paso2/FormP
 
 const Paso2 = () => {
 	return (
-		<div className='h-screen bg-gradient-linear-light dark:bg-gradient-linear-dark text-white'>
+		<div className='min-h-screen h-full bg-gradient-linear-light dark:bg-gradient-linear-dark text-white'>
 			<ContarPasos />
-			<DarkButton />
 			<FormPaso2 />
+			<DarkButton />
 		</div>
 	);
 };

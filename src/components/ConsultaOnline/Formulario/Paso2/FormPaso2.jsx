@@ -43,7 +43,7 @@ const FormPaso2 = () => {
 	];
 
 	return (
-		<form className='max-w-[800px] mx-auto'>
+		<form className='mx-auto px-5'>
 			<p className='text-center font-my-sans text-sm pb-5'>
 				Completa la siguiente información.
 				<br />
@@ -63,6 +63,7 @@ const FormPaso2 = () => {
 						/>
 					);
 				})}
+
 				<label
 					className='text-sm text-center pt-4'
 					htmlFor='defectos'>
@@ -70,7 +71,7 @@ const FormPaso2 = () => {
 				</label>
 				<textarea
 					placeholder='Describe brevemente...'
-					className='h-20 text-sm text-dark outline-none py-2 px-4 ml-5 rounded-md resize-none'
+					className='h-20 w-full text-sm text-dark outline-none py-2 px-4 rounded-md resize-none'
 					name='defectos'
 					id='defectos'></textarea>
 			</div>

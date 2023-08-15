@@ -32,7 +32,7 @@ export const DynamicCheckBoxTextarea = ({
 				<textarea
 					placeholder={textareaPlaceholder}
 					id={textareaId}
-					className='h-20 text-sm text-dark outline-none py-2 px-4 ml-5 mt-3 rounded-md resize-none'></textarea>
+					className='h-20 text-sm text-dark outline-none py-2 px-4 mt-3 rounded-md resize-none'></textarea>
 			)}
 		</div>
 	);

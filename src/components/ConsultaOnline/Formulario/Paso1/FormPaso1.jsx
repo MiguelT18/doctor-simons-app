@@ -95,7 +95,7 @@ const FormPaso1 = () => {
 				<p className='text-sm font-my-sans pb-2 pt-4'>
 					Ingresa tu fecha de nacimiento:
 				</p>
-				<div className='w-full flex justify-between min-[400px]:justify-start gap-2'>
+				<div className='w-full flex justify-start gap-2'>
 					<input
 						className='max-w-[80px] px-4 h-10 rounded-md text-sm text-center text-dark'
 						type='number'
