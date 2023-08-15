@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function ProcesoCardComponent({ title, description, icon }) {
 	return (
-		<div className='bg-white text-dark dark:bg-gray-900 dark:text-white w-full max-w-[260px] mx-auto flex flex-col justify-stretch items-start gap-3  p-5'>
+		<div className='bg-white text-dark dark:bg-gray-900 dark:text-white w-fit max-w-[220px] mx-auto flex flex-col justify-stretch items-start gap-4 p-5'>
 			<FontAwesomeIcon
 				className='text-4xl text-black dark:text-white'
 				icon={icon}
 			/>
-			<div className='flex flex-col gap-2'>
-				<h1 className='text-md font-bold font-my-montserrat uppercase'>
+			<div className='flex flex-col gap-4'>
+				<h1 className='w-fit text-md font-bold font-my-montserrat uppercase'>
 					{title}
 				</h1>
-				<p className='text-sm'>{description}</p>
+				<p className='w-fit max-w-[260px] text-sm'>{description}</p>
 			</div>
 		</div>
 	);
