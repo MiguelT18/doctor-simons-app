@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // Componentes
 import { RuleCard } from './RuleCard';
 
@@ -5,6 +7,10 @@ import { RuleCard } from './RuleCard';
 import Number1 from '../../../assets/images/consultaOnline/payment-form/number1.png';
 import Number2 from '../../../assets/images/consultaOnline/payment-form/number2.png';
 import Number3 from '../../../assets/images/consultaOnline/payment-form/number3.png';
+
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQrcode } from '@fortawesome/free-solid-svg-icons';
 
 export const Header = () => {
 	const rules = [
@@ -46,7 +52,7 @@ export const Header = () => {
 				Sigue las instrucciones y completa el formulario de pago para
 				conseguir una consulta con el Dr. Cristian Simons
 			</h2>
-			<div className='flex flex-col gap-14 px-10'>
+			<div className='flex max-md:flex-col gap-14 px-10'>
 				{rules.map((rule, index) => (
 					<RuleCard
 						key={index}
@@ -54,6 +60,18 @@ export const Header = () => {
 						imgSrc={rule.image}
 					/>
 				))}
+			</div>
+
+			<div className='flex justify-center my-8'>
+				<Link
+					to='https://wa.link/vmwsw3'
+					className='bg-main-red text-white w-fit h-fit text-center text-buttonSize italic font-bold py-2 px-5 rounded-md hover:scale-110 transition-transform duration-100 linear'>
+					Transferencia Bancaria
+					<FontAwesomeIcon
+						className='ml-3'
+						icon={faQrcode}
+					/>
+				</Link>
 			</div>
 		</header>
 	);
