@@ -14,10 +14,13 @@ const PaymentForm = () => {
 	return (
 		<>
 			<Header />
-			<div className='iframe-container'>
+			<div className='w-full h-fit px-8'>
+				<h1 className='text-center text-lg font-my-montserrat font-bold pb-8 pt-2 uppercase text-blue-light dark:text-white'>
+					Llena el siguiente formulario y realiza el pago 👇
+				</h1>
 				<iframe
 					src='https://payment.hotmart.com/next/E77601218Y?bid=1692198471505'
-					className='w-full h-full border-none'
+					className='w-full max-w-[720px] mx-auto h-fit aspect-video'
 					allowFullScreen></iframe>
 			</div>
 

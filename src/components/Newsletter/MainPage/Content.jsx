@@ -35,7 +35,7 @@ export function Content() {
 				<h1 className='text-blue-light dark:text-white text-center text-lg font-my-montserrat font-bold uppercase pb-6'>
 					Únete gratis antes de que enviemos el email de hoy
 				</h1>
-				<div className='flex max-lg:flex-col gap-5 justify-around items-center'>
+				<div className='flex max-lg:flex-col gap-5 lg:gap-52 justify-center items-center'>
 					<img
 						className='w-full max-w-[350px] h-full'
 						src={MailImg}

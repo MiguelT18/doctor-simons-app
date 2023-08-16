@@ -149,6 +149,11 @@ input:focus-visible {
 
 /* Estilo para el contenedor del iframe Formulario de Pago */
 .iframe-container {
-	height: 150vh;
+	height: 100%;
 	overflow: hidden;
+}
+
+.iframe-item {
+	/* height: clamp(1100px, 5vw, 1480px); */
+	height: max-content;
 }
