@@ -20,7 +20,7 @@ export function Form() {
 					text='¡Suscríbete aquí!'
 					icon={faRightToBracket}
 					iconSize='lg'
-					next='/newsletter'
+					next='/newsletter/thankspage_newsletter'
 				/>
 			</div>
 		</form>

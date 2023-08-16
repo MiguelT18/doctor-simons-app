@@ -17,7 +17,7 @@ export function Content() {
 
 	return (
 		<main>
-			<section className='h-[80vh] flex items-center justify-center gap-20 px-5 py-2 lg:px-10 lg:py-6'>
+			<section className='w-full h-[80vh] flex items-center justify-center gap-20 px-5 py-2 lg:px-10 lg:py-6'>
 				<div className='max-w-[620px] mx-auto'>
 					<WelcomeCopy />
 					<Form />
@@ -28,14 +28,16 @@ export function Content() {
 					alt='Cristian Hero'
 				/>
 			</section>
+
 			<Testimonios />
+
 			<section className='px-5 py-10'>
 				<h1 className='text-blue-light dark:text-white text-center text-lg font-my-montserrat font-bold uppercase pb-6'>
 					Únete gratis antes de que enviemos el email de hoy
 				</h1>
-				<div className='max-w-[900px] mx-auto grid lg:grid-cols-2 items-center justify-center'>
+				<div className='flex max-lg:flex-col gap-5 justify-around items-center'>
 					<img
-						className='w-full max-w-[420px] mx-auto h-full'
+						className='w-full max-w-[350px] h-full'
 						src={MailImg}
 						alt='Subscribe to our newsletter'
 					/>
