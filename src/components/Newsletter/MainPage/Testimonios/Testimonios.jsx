@@ -2,7 +2,7 @@
 import { TestimonioCard } from './TestimonioCard';
 
 // Hooks
-import useTestimoniosData from '../../../hooks/useTestimoniosData';
+import useTestimoniosData from '../../../../hooks/useTestimoniosData';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 //? Import Swiper custom styles
-import '../../../components/styles/swiper_slides.css';
+import '../../../../components/styles/swiper_slides.css';
 
 export function Testimonios() {
 	const { users, error } = useTestimoniosData('newsletter');

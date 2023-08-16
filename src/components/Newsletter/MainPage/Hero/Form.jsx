@@ -1,4 +1,4 @@
-import { NextNavButton } from '../../NextNavButton';
+import { NextNavButton } from '../../../NextNavButton';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 export function Form() {

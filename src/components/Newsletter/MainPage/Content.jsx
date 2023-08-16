@@ -5,12 +5,12 @@ import { Form } from './Hero/Form';
 import { UneteArticle } from './Unete/UneteArticle';
 
 // Hooks
-import useDarkMode from '../../hooks/useDarkMode';
+import useDarkMode from '../../../hooks/useDarkMode';
 
 // Images
-import HeroDarkImg from '../../assets/images/newsletter/images/hero-dark-img.webp';
-import HeroLightImg from '../../assets/images/newsletter/images/hero-light-img.webp';
-import MailImg from '../../assets/images/newsletter/images/mail-image.webp';
+import HeroDarkImg from '../../../assets/images/newsletter/images/hero-dark-img.webp';
+import HeroLightImg from '../../../assets/images/newsletter/images/hero-light-img.webp';
+import MailImg from '../../../assets/images/newsletter/images/mail-image.webp';
 
 export function Content() {
 	const { isDarkMode } = useDarkMode();
