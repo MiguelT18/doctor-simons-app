@@ -14,7 +14,7 @@ const PaymentForm = () => {
 	return (
 		<>
 			<Header />
-			<div className='flex justify-center items-center h-screen'>
+			<div className='iframe-container'>
 				<iframe
 					src='https://payment.hotmart.com/next/E77601218Y?bid=1692198471505'
 					className='w-full h-full border-none'
